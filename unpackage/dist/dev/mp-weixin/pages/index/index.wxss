@@ -1,0 +1,72 @@
+
+.content {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.logo {
+	height: 200rpx;
+	width: 200rpx;
+	margin-top: 200rpx;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50rpx;
+}
+.text-area {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+}
+.title {
+	font-size: 36rpx;
+	color: #8f8f94;
+}
+.query-tool {
+	background-color: #007aff;
+	width: 100%;
+	height: 75px;
+	border-bottom: 1px solid #007aff;
+	line-height: 75px;
+	border-bottom-left-radius: 75%;
+	border-bottom-right-radius: 75%;
+}
+.query-tool .uni-form-item {
+	height: 35px;
+	position: relative;
+}
+.query-tool .uni-input {
+	text-align: center;
+	margin: 0 auto;
+	border: 1px solid red;
+	height: 35px;
+	width: 75%;
+	background-color: #ffffff;
+	position: relative;
+	border-radius: 25px;
+	margin-top: 15px;
+}
+.query-tool .query-search {
+	position: absolute;
+	right: 15%;
+	top: 6px;
+}
+
