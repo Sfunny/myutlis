@@ -1,0 +1,180 @@
+<h3 data-id="heading-0"
+    style="color: rgb(51, 51, 51); line-height: 1.5; margin-top: 35px; margin-bottom: 10px; padding-bottom: 0px; font-size: 18px; font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+  函数作用域
+</h3>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  JavaScript 不是块级作用域而是通过函数来管理作用域，在函数内部声明的变量只能在这个函数内部使用，
+</p>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  1.块级作用域测试
+</p>
+<pre class="prism-highlight prism-language-javascript">if(true){
+ var test=1;
+}
+console.log(test); //1</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  2.函数级作用域测试
+</p>
+<pre class="prism-highlight prism-language-javascript">(function() {
+    var test = 1;
+})();
+console.log(test); //Uncaught ReferenceError: test is not defined</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  通过上面两个例子我们可以看出 在函数里声明的变量在外边是不能用的、而块级是可以的
+</p>
+<h3 data-id="heading-1"
+    style="color: rgb(51, 51, 51); line-height: 1.5; margin-top: 35px; margin-bottom: 10px; padding-bottom: 0px; font-size: 18px; font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+  全局变量
+</h3>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  全局变量是在函数外定义的变量或者未定义就使用的变量(隐式全局变量)又或是直接用window.属性名=值添加的变量，每一个javascript运行环境都有一个全局对象，例如在浏览器中window就指向这个全局对象(nodeJS是global)，其实我们创建的每一个全局变量或者全局方法都是全局对象的一个属性和方法
+</p>
+<pre class="prism-highlight prism-language-javascript">var a=5;
+(function(){
+    console.log(a);
+    console.log(window.a);
+})();//5 5</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  由此可见 全局变量其实就是全局对象上的一个属性、我们甚至可以通过window来添加一个全局变量
+</p>
+<pre class="prism-highlight prism-language-javascript">(function(){
+    window.a=7;
+})();
+console.log(a);//7</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  全局变量添加成功啦 ^_^
+</p>
+<h3 data-id="heading-2"
+    style="color: rgb(51, 51, 51); line-height: 1.5; margin-top: 35px; margin-bottom: 10px; padding-bottom: 0px; font-size: 18px; font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+  隐式全局变量
+</h3>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  在javascript中不用声明就能使用变量、而且没有声明就使用的变量也会默认成为全局对象的属性
+</p>
+<pre class="prism-highlight prism-language-javascript">(function(){
+    a=7;
+})();
+console.log(a);//7</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  这就很尴尬了，既然直接用就是全局变量,那么我们为啥还要用var来定义全局变量，它们之间到底有啥区别?<br/>听我慢慢说来:<br/>1.没有用var 声明就使用的变量在严格模式下会报错的
+</p>
+<pre class="prism-highlight prism-language-javascript">&quot;use strict&quot;;
+a=1;
+console.log(a);//Uncaught ReferenceError: a is not defined</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  2 var声明的全局变量会被提升，隐式全局变量不会被提升(提升一会就会说到)
+</p>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  未提升
+</p>
+<pre class="prism-highlight prism-language-javascript">console.log(a);//Uncaught ReferenceError: a is not defined
+a=1;
+
+console.log(a);// undefined
+var a=1;</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  3 var声明的全局变量不可用delete删除、隐式全局变量可以
+</p>
+<pre class="prism-highlight prism-language-javascript">
+  var a=1;
+b=2;
+delete a;
+delete b;
+console.log(a);//1
+console.log(b);////Uncaught ReferenceError: b is not defined</pre>
+<h3 data-id="heading-3"
+    style="color: rgb(51, 51, 51); line-height: 1.5; margin-top: 35px; margin-bottom: 10px; padding-bottom: 0px; font-size: 18px; font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+  变量提升
+</h3>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  在Javascript中，函数及变量的声明都将被提升到函数的最顶部，也就是说我们可以先使用后声明,<br/>但函数表达式和变量表达式只是将函数或者变量的声明提升到函数顶部，函数表达式和变量的初始化将不被提升我们来看一下案例
+</p>
+<pre class="prism-highlight prism-language-javascript">fun();//hello,world哥
+function fun(){
+    console.log(&quot;hello,world哥&quot;);
+}</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  方法先使用后声明这显然是没有问题的、那么我们接着看变量的提升
+</p>
+<pre
+  class="prism-highlight prism-language-javascript">console.log(a);//undefined
+console.log(b);//Uncaught ReferenceError: b is not defined
+var a=5;</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  a的声明被提升，但是初始化值并没有提升、打印a的值为undefined、说明有这个变量但是它没有值、没有声明的b直接报了错，说明变量的声明是会提升的但是变量的初始化不会提升
+</p>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  我们接着来看
+</p>
+<pre class="prism-highlight prism-language-javascript">var fun=function(){
+console.log(&quot;本事啦,我的弟&quot;);
+}
+fun();//本事啦,我的弟</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  显然没有任何问题，我们把声明和使用颠倒位置
+</p>
+<pre class="prism-highlight prism-language-javascript">fun();
+var fun=function(){
+    console.log(&quot;本事啦,我的弟&quot;);//Uncaught TypeError: fun is not a function
+}</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  我们发现报错了，但如果我们直接使用fun则会报一个&quot;Uncaught ReferenceError: fun is not defined&quot;的错误(和不声明fun报错是不一样的)，其实fun也是一个变量，只不过他是function(){console.log(&quot;本事啦,我的弟&quot;);}的一个引用，fun的声明被提升了，但是初始化没有被提升。
+</p>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  再给大家来一个比较有趣的关于提升的例子
+</p>
+<pre class="prism-highlight prism-language-javascript">var a=1;
+(function(){
+    console.log(a);
+    var a=2;
+    console.log(a);
+})();</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  大家认真的思考一下、打印结果是什么？<br/>正确答案:undefined 2 大家应该想的是1,2 其实这个结果就是变量提升的原因
+</p>
+<h3 data-id="heading-4"
+    style="color: rgb(51, 51, 51); line-height: 1.5; margin-top: 35px; margin-bottom: 10px; padding-bottom: 0px; font-size: 18px; font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+  词法作用域
+</h3>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  在javascript中每个函数都有一个属于自己的词法作用域，在定义时而非执行时都会创建一个自己的作用域
+</p>
+<pre class="prism-highlight prism-language-javascript">function fun1(){var a=1;fun2();}
+function fun2(){return a;}
+fun2();//Uncaught ReferenceError: a is not defined</pre>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  大家应该想的是返回1吧，报错的原因是在fun2定义时(而非执行时)，a是不可见的，它只能访问自身作用域和全局作用域，如果大家还是不明白那么可以仔细想想 这句话 &quot;在定义时而非执行时都会创建一个自己的作用域&quot;
+</p>
+<h3 data-id="heading-5"
+    style="color: rgb(51, 51, 51); line-height: 1.5; margin-top: 35px; margin-bottom: 10px; padding-bottom: 0px; font-size: 18px; font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; white-space: normal; background-color: rgb(255, 255, 255);">
+  闭包
+</h3>
+<p
+  style="line-height: inherit; margin-top: 22px; margin-bottom: 22px; color: rgb(51, 51, 51); font-family: -apple-system, system-ui, BlinkMacSystemFont, &quot;Helvetica Neue&quot;, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 15px; white-space: normal; background-color: rgb(255, 255, 255);">
+  闭包其实说到底也就是词法作用域的问题，弄懂了作用域也就懂了闭包，以后我们再来单独写一篇详细论述闭包
+</p>
+<p>
+  <br/>
+</p>

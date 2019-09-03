@@ -1,0 +1,233 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<meta charset="UTF-8"UTF-8"">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="DW8ROJKL3tBANCDQEPSxJYp22luiSVh_HpKDZDOwI68" />
+<title>
+  友情链接 | 未来博客
+</title>
+<meta name="description" content="未来博客-是一个专注前端，后端开发与技术，个人情感分享，成长之路的个人博客"/>
+<meta name="keywords" content="未来博客,html,css,js,node,php,前端,后端,全栈>"/>
+<link rel="stylesheet" href="http://www.weilai.info/wp-content/themes/blog/usr/static/layui/css/layui.css">
+<link rel="stylesheet" href="http://www.weilai.info/wp-content/themes/blog/usr/static/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.weilai.info/wp-content/themes/blog/style.css">
+<link rel="icon" href="http://www.weilai.info/wp-content/uploads/2019/02/cropped-logo-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="http://www.weilai.info/wp-content/uploads/2019/02/cropped-logo-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.weilai.info/wp-content/uploads/2019/02/cropped-logo-180x180.jpg" />
+<meta name="msapplication-TileImage" content="http://www.weilai.info/wp-content/uploads/2019/02/cropped-logo-270x270.jpg" />
+<meta name="Author" contect="shiyanbin">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">
+      <h1><a href="/"><i class="fa fa-home"></i><span>未来博客</span></a></h1>
+    </div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left layui-hide-xs">
+      <li class="layui-nav-item side-switch"><a href="javascript:;"><i class="fa fa-dedent"></i></a></li>
+      <li class="layui-nav-item"><a href="/">首页</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item layui-hide-xs">
+
+
+<form class="layui-form search-form" method="get" action="http://www.weilai.info/">
+    <input type="search" class="search-field layui-input t-ip" placeholder="输入关键字搜索" value="" name="s" required lay-verify="required" autocomplete="off"/>
+</form>      </li>
+		<li class="layui-nav-item side-btn layui-hide-sm layui-this"><a href="javascript:;"><i class="fa fa-bars"></i></a></li>
+    </ul>
+  </div>
+  <div class="side layui-bg-black" id="sidebar-nav">
+    <div class="side-logo">
+      <h1><a href="/"  title=""><i class="fa fa-home"></i><span> 未来博客</span></a></h1>
+    </div>
+    <div class="layui-side-scroll">
+      <div class="user-side">
+        <img src="http://weilai.info/wp-content/uploads/2019/02/logo.jpg" alt="logo" class="side-upic" height="80px" >
+        <div class="t-t">
+
+          <p>
+           找到自己想做的事，并为之坚持！          </p>
+          <span><i class="fa fa-map-marker"></i> China</span>
+        </div>
+        <div class="t-i">
+          <a href="javascript:;" target="_blank" rel="nofollow" class="wxbusinesscard"><i class="fa fa-weixin fa-fw"></i>
+          <div class="wxbusinesscard_box">
+            <img  src="http://www.weilai.info/wp-content/uploads/2019/02/myweixin.jpg" alt="扫一扫">
+          </div>
+          </a>
+          <a href="http://wpa.qq.com/msgrd?v=3&uin=2385994655&site=qq&menu=yes" rel="nofollow" target="_blank"><i class="fa fa-qq fa-fw"></i></a>
+          <a href="mailto:sybsss@sina.cn" rel="nofollow"><i class="fa fa-envelope fa-fw"></i></a>
+        </div>
+      </div>
+      <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="nav">
+        <li class="layui-nav-item"><a href="/"><i class="fa fa-circle-o fa-fw"></i><span>首页</span></a></li>
+
+        <li class="layui-nav-item layui-nav-itemed"><a href="javascript:;" class="nav-item-a"><i class="fa fa-fw fa-lemon-o"></i><span>类别</span><span class="layui-nav-more"></span></a>
+
+            <ul id="scroll2" class="layui-nav-child"><li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a href="http://www.weilai.info/category/front_end"><i class="fa fa-angle-right"></i>前端</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a href="http://www.weilai.info/category/rear_end"><i class="fa fa-angle-right"></i>后端</a></li>
+<li id="menu-item-264" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-264"><a href="http://www.weilai.info/category/tool"><i class="fa fa-angle-right"></i>工具</a></li>
+</ul> </li>
+        <!--循环输出独立页面-->
+        <li class="layui-nav-item">
+        <a href="javascript:;" class="nav-item-a"><i class="fa fa-fw fa-smile-o"></i><span>页面</span><span class="layui-nav-more"></span></a>
+        <ul id="scroll2" class="layui-nav-child"><li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="http://www.weilai.info/mylife"><i class="fa fa-angle-right"></i>博主念叨</a></li>
+<li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-141"><a href="http://www.weilai.info/archive"><i class="fa fa-angle-right"></i>文章归档</a></li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-122 current_page_item menu-item-126"><a href="http://www.weilai.info/links"><i class="fa fa-angle-right"></i>友情链接</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="http://www.weilai.info/privacy-policy"><i class="fa fa-angle-right"></i>隐私政策</a></li>
+</ul>
+
+
+
+
+
+    </div>
+  </div>
+
+
+
+<div class="layui-body">
+	<!-- 默认面包屑 -->
+	<div class="layui-fluid map">
+
+    </div>
+
+	<!-- 默认面包屑  end-->
+	<div class="layui-fluid main-wp">
+		<div class="layui-row main layui-col-space15">
+			<div class="content layui-col-md12 layui-col-lg12">
+				<!-- 文章内容 -->
+				<div class="title-article">
+                <fieldset class="layui-elem-field" style="border-radius:4px;">
+                    <legend><i class="fa fa-link" aria-hidden="true"></i> 友情链接</legend>
+                    <div class="layui-field-box">
+                        欢迎申请友情链接，只要是正规站常更新即可
+
+申请首页链接需符合以下几点要求：
+<blockquote>本站优先招原创内容的博客或网站，站点主题内容是互联网资讯、技术、资源、设计等等；
+
+Baidu有正常收录，百度近期快照，不含有违法国家法律内容的合法网站（不提供H下载）。
+
+如果您的站点内容少之又少，且长期不更新，申请链接不予受理!</blockquote>
+友情链接的目的是常来常往，凡是加了友链的朋友，我都会经常访问的，也欢迎你来我的网站参观、留言等。
+
+留言后，麻烦站长们先在自己的站点添加上本站友链，我会尽快添加你的友链并通知你。
+
+&nbsp;                    </div>
+                    <div class="links-typecho">
+
+
+                    <ul class="layui-col-space10">
+                        <li class="layui-col-md2 layui-col-xs6">
+                                        <a href="https://www.zhaochao.top/" title=""><div class="t-p"><img src="https://www.zhaochao.top/images/logo/logo5.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="iBlog博客"  /></div><b>iBlog博客</b><span>iBlog-爱博客 是赵超的私人博客，专注于开发技术分享！</span></a></li><li class="layui-col-md2 layui-col-xs6">
+                                        <a href="http://www.javaweb.shop" title=""><div class="t-p"><img src="http://www.javaweb.shop/images/logo/logo.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Java菜市场"  /></div><b>Java菜市场</b><span></span></a></li><li class="layui-col-md2 layui-col-xs6">
+                                        <a href="http://www.oneyuanma.com/" title=""><div class="t-p"><img src="http://www.oneyuanma.com/webpage/fly/res/images/logo.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="ONE源码"  /></div><b>ONE源码</b><span>ONE源码_java系统源码-HTML源码-jQuery插件-技术博客-前后台HTML模板</span></a></li><li class="layui-col-md2 layui-col-xs6">
+                                        <a href="https://www.n43.cn/" title=""><div class="t-p"><img src="https://www.n43.cn/wp-content/uploads/2019/07/round_corner_image_by_atool-1.png" class="attachment-thumbnail size-thumbnail wp-post-image" alt="凌云博客"  /></div><b>凌云博客</b><span></span></a></li>
+                    </ul>
+
+                    </div>
+
+                </fieldset>
+
+            </div>
+
+		</div>
+	</div>
+
+
+
+
+<div class="footer layui-fluid">
+          <div class="layui-row layui-fluid">
+            <div class="layui-col-md9">
+              <span class="layui-breadcrumb" lay-separator="|">
+
+              <a href="http://www.weilai.info/mylife">博主念叨</a>
+<a href="http://www.weilai.info/archive">文章归档</a>
+<a href="http://www.weilai.info/links">友情链接</a>
+<a href="http://www.weilai.info/privacy-policy">隐私政策</a>
+
+              </br>
+              <span>声明：版权归原作者所有，本站所有数据资源仅供学习与参考，请勿用于商业用途。</span>
+              </span>
+            </div>
+            <div class="layui-col-md3 t-r">
+            <a href="javascript:;" target="_blank" rel="nofollow" class="wxbusinesscard"><i class="fa fa-weixin fa-fw"></i>
+          <div class="wxbusinesscard_box">
+            <img  src="http://www.weilai.info/wp-content/uploads/2019/02/myweixin.jpg" alt="扫一扫">
+          </div>
+          </a>
+          <a href="http://wpa.qq.com/msgrd?v=3&uin=2385994655&site=qq&menu=yes" rel="nofollow" target="_blank"><i class="fa fa-qq fa-fw"></i></a>
+          <a href="mailto:sybsss@sina.cn" rel="nofollow"><i class="fa fa-envelope fa-fw"></i></a>
+            </div>
+            <div class="layui-col-md12 t-copy">
+              <span class="layui-breadcrumb" lay-separator="/">
+              <span><i class="fa fa-copyright"></i> 2019 <a class="layui-" href="" target="_blank">未来博客</a></span>
+
+              <span>Theme by <a href="http://www.qinshoushou.com" target="_blank">www.qinshoushou.com</a></span>
+              <a href="/" target="_blank" rel="nofollow">晋ICP备17009725号</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 主体结束 -->
+
+
+
+  </div>
+    <!-- 引用js -->
+    <script src="http://www.weilai.info/wp-content/themes/blog/usr/static/layui/layui.js"></script>
+    <script src="http://www.weilai.info/wp-content/themes/blog/usr/static/js/main.js"></script>
+
+    <p><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?15ed1ed2132d850860c34e0b0b6427a9";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></p>
+<p><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"184.79998779296875"},"image":{"viewList":["sqq","weixin","qzone","tsina","tqq","renren","douban"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["sqq","weixin","qzone","tsina","tqq","renren","douban"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></p>
+    <script type="text/javascript">
+
+  layui.use('layer', function(){
+    var $ = layui.jquery, layer = layui.layer;
+      $('#layerDemo .layui-btn').on('click', function(){
+      var othis = $(this), method = othis.data('method');
+      active[method] ? active[method].call(this, othis) : '';
+      });
+      var active = {
+        reward: function(){
+          layer.tab({
+            btn: '爱心名单',
+            btnAlign: 'c',
+            id: 'reward',
+            tab: [{
+              title: '微信',
+              content: '<img src="http://weilai.info/wp-content/uploads/2019/02/weichatPay.jpg" width="200"><p>所有打赏的小伙伴都在名单里</br>再次谢谢大家的支持~~</p>'
+            }, {
+              title: '支付宝',
+              content: '<img src="http://weilai.info/wp-content/uploads/2019/02/zfupay.jpg" width="200"><p>所有打赏的小伙伴都在名单里</br>再次谢谢大家的支持~~</p>'
+            }]
+            ,success: function(layero){
+              var btn = layero.find('.layui-layer-btn');
+              btn.find('.layui-layer-btn0').attr({
+                href: ''
+                ,target: '_blank'
+              });
+            }
+          });
+        }
+      };
+  });
+    </script>
+
+    </body>
+    </html>

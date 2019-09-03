@@ -1,0 +1,327 @@
+<!DOCTYPE HTML>
+<html class="no-js">
+<head>
+<meta charset="UTF-8"UTF-8"">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="google-site-verification" content="DW8ROJKL3tBANCDQEPSxJYp22luiSVh_HpKDZDOwI68" />
+<title>
+  文章归档 | 未来博客 
+</title>
+<meta name="description" content="未来博客-是一个专注前端，后端开发与技术，个人情感分享，成长之路的个人博客"/>
+<meta name="keywords" content="未来博客,html,css,js,node,php,前端,后端,全栈>"/>
+<link rel="stylesheet" href="http://www.weilai.info/wp-content/themes/blog/usr/static/layui/css/layui.css">
+<link rel="stylesheet" href="http://www.weilai.info/wp-content/themes/blog/usr/static/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://www.weilai.info/wp-content/themes/blog/style.css">
+<link rel="icon" href="http://www.weilai.info/wp-content/uploads/2019/02/cropped-logo-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="http://www.weilai.info/wp-content/uploads/2019/02/cropped-logo-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="http://www.weilai.info/wp-content/uploads/2019/02/cropped-logo-180x180.jpg" />
+<meta name="msapplication-TileImage" content="http://www.weilai.info/wp-content/uploads/2019/02/cropped-logo-270x270.jpg" />
+<meta name="Author" contect="shiyanbin">
+</head>
+<body class="layui-layout-body">
+<div class="layui-layout layui-layout-admin">
+  <div class="layui-header">
+    <div class="layui-logo">
+      <h1><a href="/"><i class="fa fa-home"></i><span>未来博客</span></a></h1>
+    </div>
+    <!-- 头部区域（可配合layui已有的水平导航） -->
+    <ul class="layui-nav layui-layout-left layui-hide-xs">
+      <li class="layui-nav-item side-switch"><a href="javascript:;"><i class="fa fa-dedent"></i></a></li>
+      <li class="layui-nav-item"><a href="/">首页</a></li>
+    </ul>
+    <ul class="layui-nav layui-layout-right">
+      <li class="layui-nav-item layui-hide-xs">
+					
+
+<form class="layui-form search-form" method="get" action="http://www.weilai.info/">
+    <input type="search" class="search-field layui-input t-ip" placeholder="输入关键字搜索" value="" name="s" required lay-verify="required" autocomplete="off"/>
+</form>      </li>
+		<li class="layui-nav-item side-btn layui-hide-sm layui-this"><a href="javascript:;"><i class="fa fa-bars"></i></a></li>
+    </ul>
+  </div>
+  <div class="side layui-bg-black" id="sidebar-nav">
+    <div class="side-logo">
+      <h1><a href="/"  title=""><i class="fa fa-home"></i><span> 未来博客</span></a></h1>
+    </div>
+    <div class="layui-side-scroll">
+      <div class="user-side">
+        <img src="http://weilai.info/wp-content/uploads/2019/02/logo.jpg" alt="logo" class="side-upic" height="80px" >
+        <div class="t-t">
+       
+          <p>
+           找到自己想做的事，并为之坚持！          </p>
+          <span><i class="fa fa-map-marker"></i> China</span>
+        </div>
+        <div class="t-i">
+          <a href="javascript:;" target="_blank" rel="nofollow" class="wxbusinesscard"><i class="fa fa-weixin fa-fw"></i>
+          <div class="wxbusinesscard_box">
+            <img  src="http://www.weilai.info/wp-content/uploads/2019/02/myweixin.jpg" alt="扫一扫">
+          </div>
+          </a>
+          <a href="http://wpa.qq.com/msgrd?v=3&uin=2385994655&site=qq&menu=yes" rel="nofollow" target="_blank"><i class="fa fa-qq fa-fw"></i></a>
+          <a href="mailto:sybsss@sina.cn" rel="nofollow"><i class="fa fa-envelope fa-fw"></i></a>
+        </div>
+      </div>
+      <ul class="layui-nav layui-nav-tree layui-inline" lay-filter="nav">
+        <li class="layui-nav-item"><a href="/"><i class="fa fa-circle-o fa-fw"></i><span>首页</span></a></li>
+      
+        <li class="layui-nav-item layui-nav-itemed"><a href="javascript:;" class="nav-item-a"><i class="fa fa-fw fa-lemon-o"></i><span>类别</span><span class="layui-nav-more"></span></a>
+
+            <ul id="scroll2" class="layui-nav-child"><li id="menu-item-16" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-16"><a href="http://www.weilai.info/category/front_end"><i class="fa fa-angle-right"></i>前端</a></li>
+<li id="menu-item-18" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-18"><a href="http://www.weilai.info/category/rear_end"><i class="fa fa-angle-right"></i>后端</a></li>
+<li id="menu-item-264" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-264"><a href="http://www.weilai.info/category/tool"><i class="fa fa-angle-right"></i>工具</a></li>
+</ul> 
+
+        </li>
+        <!--循环输出独立页面-->
+        <li class="layui-nav-item">
+        <a href="javascript:;" class="nav-item-a"><i class="fa fa-fw fa-smile-o"></i><span>页面</span><span class="layui-nav-more"></span></a>
+      
+        <ul id="scroll2" class="layui-nav-child"><li id="menu-item-153" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-153"><a href="http://www.weilai.info/mylife"><i class="fa fa-angle-right"></i>博主念叨</a></li>
+<li id="menu-item-141" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-139 current_page_item menu-item-141"><a href="http://www.weilai.info/archive"><i class="fa fa-angle-right"></i>文章归档</a></li>
+<li id="menu-item-126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-126"><a href="http://www.weilai.info/links"><i class="fa fa-angle-right"></i>友情链接</a></li>
+<li id="menu-item-99" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99"><a href="http://www.weilai.info/privacy-policy"><i class="fa fa-angle-right"></i>隐私政策</a></li>
+</ul> 
+    
+
+
+       
+      
+    </div>
+  </div>    
+
+
+
+<div class="layui-body">
+	<!-- 默认面包屑 -->
+	<div class="layui-fluid map">
+    
+    </div>
+
+	<!-- 默认面包屑  end-->
+	<div class="layui-fluid main-wp">
+		<div class="layui-row main layui-col-space15">
+			<div class="content layui-col-md12 layui-col-lg12">
+				<!-- 文章内容 -->
+			
+				<div class="title-article">
+                <fieldset class="layui-elem-field" style="border-radius:4px;">
+                    <legend><i class="fa fa-list-alt"></i> 文章归档</legend>
+					<div class="archives">
+
+							<div class="title-page">
+								<p>目前共计 35 
+								篇日志，共 46   条评论，加油啊~</p>
+							</div>
+							<ul class="layui-timeline">
+					<fieldset class="layui-elem-field layui-field-title">
+									<legend>2019 年</legend>
+								</fieldset><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2019年07月</h3><p>
+								<a href="http://www.weilai.info/front_end/394.html" title="算法合集 ">算法合集 <small><i class="fa fa-heart-o"></i> 上午2:02日发布，共3条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2019年06月</h3><p>
+								<a href="http://www.weilai.info/front_end/391.html" title="原生JS获取坐标 ">原生JS获取坐标 <small><i class="fa fa-heart-o"></i> 上午7:52日发布，共1条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/383.html" title="VSCODE配置eslint校验和保存自动修复 ">VSCODE配置eslint校验和保存自动修复 <small><i class="fa fa-heart-o"></i> 上午10:05日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/380.html" title="从零搭建vue单文件组件项目 ">从零搭建vue单文件组件项目 <small><i class="fa fa-heart-o"></i> 上午10:16日发布，共0条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2019年05月</h3><p>
+								<a href="http://www.weilai.info/front_end/376.html" title="vscode使用 ">vscode使用 <small><i class="fa fa-heart-o"></i> 上午10:34日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/372.html" title="VUEX的简单使用 ">VUEX的简单使用 <small><i class="fa fa-heart-o"></i> 下午1:56日发布，共2条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/360.html" title="vue+webpack打造todo基础应用 ">vue+webpack打造todo基础应用 <small><i class="fa fa-heart-o"></i> 下午12:25日发布，共2条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/358.html" title="vue中动态路由addrouter简单使用 ">vue中动态路由addrouter简单使用 <small><i class="fa fa-heart-o"></i> 下午11:37日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/351.html" title="JS一些常用的日期操作 ">JS一些常用的日期操作 <small><i class="fa fa-heart-o"></i> 下午2:04日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/345.html" title="安卓设备或电视设备加载html文件后，显示不全 ">安卓设备或电视设备加载html文件后，显示不全 <small><i class="fa fa-heart-o"></i> 上午2:27日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/rear_end/339.html" title="Electron 热更新和electron-builder 打包 ">Electron 热更新和electron-builder 打包 <small><i class="fa fa-heart-o"></i> 下午8:15日发布，共2条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2019年04月</h3><p>
+								<a href="http://www.weilai.info/tool/326.html" title="阿里云上各种优惠码合集——阿里云推荐码、阿里云幸运券、阿里云优惠券 ">阿里云上各种优惠码合集——阿里云推荐码、阿里云幸运券、阿里云优惠券 <small><i class="fa fa-heart-o"></i> 下午12:07日发布，共1条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/315.html" title="VUE组件中name的作用 ">VUE组件中name的作用 <small><i class="fa fa-heart-o"></i> 下午12:49日发布，共1条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2019年03月</h3><p>
+								<a href="http://www.weilai.info/front_end/292.html" title="node 轮询mysql ，报错，连接数过多 ">node 轮询mysql ，报错，连接数过多 <small><i class="fa fa-heart-o"></i> 上午2:14日发布，共1条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/tool/262.html" title="分享几个超级好用的免费梯子，包括安卓版哦~ ">分享几个超级好用的免费梯子，包括安卓版哦~ <small><i class="fa fa-heart-o"></i> 上午9:51日发布，共4条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/rear_end/255.html" title="Node.js实现一个超级简便的挖矿功能 ">Node.js实现一个超级简便的挖矿功能 <small><i class="fa fa-heart-o"></i> 下午5:24日发布，共0条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2019年02月</h3><p>
+								<a href="http://www.weilai.info/rear_end/213.html" title="Linux grep 正则应用 ">Linux grep 正则应用 <small><i class="fa fa-heart-o"></i> 下午6:10日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/203.html" title="thinkphp+mysql 完成多条件排序 ">thinkphp+mysql 完成多条件排序 <small><i class="fa fa-heart-o"></i> 上午1:30日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/rear_end/166.html" title="Electron实现前后端同时启动-比较傻 ">Electron实现前后端同时启动-比较傻 <small><i class="fa fa-heart-o"></i> 下午7:01日发布，共2条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/rear_end/155.html" title="NODE使用CMD命令 ">NODE使用CMD命令 <small><i class="fa fa-heart-o"></i> 下午5:37日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/134.html" title="偶遇，侧边栏拖拽式效果，用最少的代码实现 ">偶遇，侧边栏拖拽式效果，用最少的代码实现 <small><i class="fa fa-heart-o"></i> 下午5:23日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/127.html" title="PHP访问文件目录进行权限验证 ">PHP访问文件目录进行权限验证 <small><i class="fa fa-heart-o"></i> 下午1:02日发布，共0条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2019年01月</h3><p>
+								<a href="http://www.weilai.info/front_end/198.html" title="NODE-百度AI OCR识别 ">NODE-百度AI OCR识别 <small><i class="fa fa-heart-o"></i> 下午12:19日发布，共17条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/rear_end/149.html" title="node SOCKET.iO的使用方法 ">node SOCKET.iO的使用方法 <small><i class="fa fa-heart-o"></i> 上午6:00日发布，共3条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/rear_end/160.html" title="node通过环境变量控制是否为开发环境 ">node通过环境变量控制是否为开发环境 <small><i class="fa fa-heart-o"></i> 上午8:22日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/196.html" title="Excel链接mysql数据库 ">Excel链接mysql数据库 <small><i class="fa fa-heart-o"></i> 下午12:26日发布，共0条评论</small></a>
+							</p><fieldset class="layui-elem-field layui-field-title">
+									<legend>2018 年</legend>
+								</fieldset><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2018年12月</h3><p>
+								<a href="http://www.weilai.info/front_end/199.html" title="PM2使用 ">PM2使用 <small><i class="fa fa-heart-o"></i> 上午7:46日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/rear_end/148.html" title="PDF项目 ">PDF项目 <small><i class="fa fa-heart-o"></i> 上午7:55日发布，共0条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2018年11月</h3><p>
+								<a href="http://www.weilai.info/front_end/190.html" title="node 小知识 ">node 小知识 <small><i class="fa fa-heart-o"></i> 上午1:35日发布，共0条评论</small></a>
+							</p><p>
+								<a href="http://www.weilai.info/front_end/197.html" title="Node.js如何在异步方法都执行后再执行 ">Node.js如何在异步方法都执行后再执行 <small><i class="fa fa-heart-o"></i> 上午2:02日发布，共0条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2018年09月</h3><p>
+								<a href="http://www.weilai.info/rear_end/272.html" title="由于session导致的用户状态频繁丢失 ">由于session导致的用户状态频繁丢失 <small><i class="fa fa-heart-o"></i> 下午10:01日发布，共0条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2018年07月</h3><p>
+								<a href="http://www.weilai.info/tool/265.html" title="火车头使用php插件时，无法使用curl ">火车头使用php插件时，无法使用curl <small><i class="fa fa-heart-o"></i> 下午1:39日发布，共2条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2018年06月</h3><p>
+								<a href="http://www.weilai.info/rear_end/147.html" title="GIT学习 ">GIT学习 <small><i class="fa fa-heart-o"></i> 上午11:17日发布，共0条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2018年04月</h3><p>
+								<a href="http://www.weilai.info/front_end/304.html" title="mysql 示列 ">mysql 示列 <small><i class="fa fa-heart-o"></i> 上午7:56日发布，共0条评论</small></a>
+							</p><li class="layui-timeline-item"><i class="layui-icon layui-timeline-axis"></i>
+								<div class="layui-timeline-content">
+									<h3 class="layui-timeline-title">2018年03月</h3><p>
+								<a href="http://www.weilai.info/front_end/201.html" title="electron安装及打包 ">electron安装及打包 <small><i class="fa fa-heart-o"></i> 上午3:10日发布，共0条评论</small></a>
+							</p>					<li class="layui-timeline-item">
+						<i class="layui-icon layui-timeline-axis"></i>
+						<div class="layui-timeline-content layui-text">
+							<div class="layui-timeline-title">一切的开始</div>
+						</div>
+					</li>
+					</ul>
+					</div>
+                </fieldset>
+				
+            </div>
+		
+		</div>
+	</div>
+
+
+
+
+<div class="footer layui-fluid">
+          <div class="layui-row layui-fluid">
+            <div class="layui-col-md9">
+              <span class="layui-breadcrumb" lay-separator="|">
+           
+              <a href="http://www.weilai.info/mylife">博主念叨</a>
+<a href="http://www.weilai.info/archive">文章归档</a>
+<a href="http://www.weilai.info/links">友情链接</a>
+<a href="http://www.weilai.info/privacy-policy">隐私政策</a>
+
+              </br>
+              <span>声明：版权归原作者所有，本站所有数据资源仅供学习与参考，请勿用于商业用途。</span>
+              </span>
+            </div>
+            <div class="layui-col-md3 t-r">
+            <a href="javascript:;" target="_blank" rel="nofollow" class="wxbusinesscard"><i class="fa fa-weixin fa-fw"></i>
+          <div class="wxbusinesscard_box">
+            <img  src="http://www.weilai.info/wp-content/uploads/2019/02/myweixin.jpg" alt="扫一扫">
+          </div>
+          </a>
+          <a href="http://wpa.qq.com/msgrd?v=3&uin=2385994655&site=qq&menu=yes" rel="nofollow" target="_blank"><i class="fa fa-qq fa-fw"></i></a>
+          <a href="mailto:sybsss@sina.cn" rel="nofollow"><i class="fa fa-envelope fa-fw"></i></a>
+            </div>
+            <div class="layui-col-md12 t-copy">
+              <span class="layui-breadcrumb" lay-separator="/">
+              <span><i class="fa fa-copyright"></i> 2019 <a class="layui-" href="" target="_blank">未来博客</a></span>
+    
+              <span>Theme by <a href="http://www.qinshoushou.com" target="_blank">www.qinshoushou.com</a></span>
+              <a href="/" target="_blank" rel="nofollow">晋ICP备17009725号</a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 主体结束 -->
+
+
+
+  </div>
+    <!-- 引用js -->
+    <script src="http://www.weilai.info/wp-content/themes/blog/usr/static/layui/layui.js"></script>
+    <script src="http://www.weilai.info/wp-content/themes/blog/usr/static/js/main.js"></script>
+    
+    <p><script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?15ed1ed2132d850860c34e0b0b6427a9";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script></p>
+<p><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"5","bdPos":"right","bdTop":"184.79998779296875"},"image":{"viewList":["sqq","weixin","qzone","tsina","tqq","renren","douban"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["sqq","weixin","qzone","tsina","tqq","renren","douban"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script></p>
+    <script type="text/javascript">
+
+  layui.use('layer', function(){ 
+    var $ = layui.jquery, layer = layui.layer; 
+      $('#layerDemo .layui-btn').on('click', function(){
+      var othis = $(this), method = othis.data('method');
+      active[method] ? active[method].call(this, othis) : '';
+      });
+      var active = {
+        reward: function(){
+          layer.tab({
+            btn: '爱心名单',
+            btnAlign: 'c',
+            id: 'reward',
+            tab: [{
+              title: '微信', 
+              content: '<img src="http://weilai.info/wp-content/uploads/2019/02/weichatPay.jpg" width="200"><p>所有打赏的小伙伴都在名单里</br>再次谢谢大家的支持~~</p>'
+            }, {
+              title: '支付宝', 
+              content: '<img src="http://weilai.info/wp-content/uploads/2019/02/zfupay.jpg" width="200"><p>所有打赏的小伙伴都在名单里</br>再次谢谢大家的支持~~</p>'
+            }]
+            ,success: function(layero){
+              var btn = layero.find('.layui-layer-btn');
+              btn.find('.layui-layer-btn0').attr({
+                href: ''
+                ,target: '_blank'
+              });
+            }
+          });
+        }
+      };
+  });
+    </script>
+    
+    </body>
+    </html>
